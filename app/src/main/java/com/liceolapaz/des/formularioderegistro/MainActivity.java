@@ -36,7 +36,22 @@ public class MainActivity extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(intent);
+                //Creamos el Intent
+                Intent iName = new Intent(MainActivity.this, Resume.class);
+                //Creamos la información a pasar entre actividades
+                Bundle bName = new Bundle();
+                bName.putString("NOMBRE", nameEditText.getText().toString());
+                //Añadimos la información al intent
+                iName.putExtras(bName);
+                startActivity(iName);
+
+                Intent iSurname= new Intent(MainActivity.this, Resume.class);
+                //Creamos la información a pasar entre actividades
+                Bundle bSurname = new Bundle();
+                bSurname.putString("APELLIDO", surnameEditText.getText().toString());
+                //Añadimos la información al intent
+                iSurname.putExtras(bSurname);
+                startActivity(iSurname);
 
             }
         });
@@ -50,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if(nameEditText.getText() != null && nameEditText.getText().length() < 1) nameEditText.setError("Este campo es obligatorio");
+
             }
 
             @Override

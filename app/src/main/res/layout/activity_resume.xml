@@ -7,7 +7,7 @@
     tools:context=".Resume">
 
     <TextView
-        android:id="@+id/userSex"
+        android:id="@+id/userSex1"
         android:layout_width="94dp"
         android:layout_height="20dp"
         android:text=""
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.626" />
 
     <TextView
-        android:id="@+id/userMail"
+        android:id="@+id/userMail1"
         android:layout_width="165dp"
         android:layout_height="21dp"
         android:text=""
@@ -31,7 +31,7 @@
         app:layout_constraintVertical_bias="0.553" />
 
     <TextView
-        android:id="@+id/userCountry"
+        android:id="@+id/userCountry1"
         android:layout_width="107dp"
         android:layout_height="26dp"
         android:text=""
@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.478" />
 
     <TextView
-        android:id="@+id/userDate"
+        android:id="@+id/userDate1"
         android:layout_width="108dp"
         android:layout_height="20dp"
         android:text=""
@@ -55,7 +55,7 @@
         app:layout_constraintVertical_bias="0.401" />
 
     <TextView
-        android:id="@+id/userPhone"
+        android:id="@+id/userPhone1"
         android:layout_width="107dp"
         android:layout_height="26dp"
         android:text=""
@@ -67,7 +67,7 @@
         app:layout_constraintVertical_bias="0.318" />
 
     <TextView
-        android:id="@+id/userSurname"
+        android:id="@+id/userSurname1"
         android:layout_width="82dp"
         android:layout_height="24dp"
         android:text=""
@@ -94,8 +94,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sexo"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="365dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
 
     <TextView
         android:id="@+id/textCountry"
@@ -155,7 +159,7 @@
 
 
     <TextView
-        android:id="@+id/userName"
+        android:id="@+id/userName1"
         android:layout_width="82dp"
         android:layout_height="24dp"
         android:text=""
@@ -167,11 +171,11 @@
         app:layout_constraintVertical_bias="0.117" />
 
     <Button
-        android:id="@+id/buttonExit"
+        android:id="@+id/buttonExit1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
-        android:text="Salir"
+        android:text="Volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
